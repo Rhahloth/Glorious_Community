@@ -1,0 +1,23 @@
+.detail-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.d-wrapper {
+    flex: 1 1 250px;
+    max-width: 300px;
+    padding: 20px;
+    text-align: center;
+    background-color: #fff9e6;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.d-wrapper:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}

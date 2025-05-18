@@ -1,0 +1,163 @@
+.hero-section {
+    background-image: url('../backgrounds/heart-hero.jpg');
+    /* Update with your image */
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-overlay {
+    background-color: #334E58;
+    /* subtle dark overlay for readability */
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-text-wrapper {
+    text-align: center;
+    color: white;
+    padding: 20px;
+    max-width: 800px;
+}
+
+.hero-text-wrapper h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    font-family: 'Arial Black', sans-serif;
+}
+
+.hero-text-wrapper p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    font-family: Arial, sans-serif;
+}
+
+.hero-btn {
+    text-decoration: none;
+    background-color: orange;
+    color: white;
+    padding: 12px 30px;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.hero-btn:hover {
+    background-color: darkorange;
+}
+.testimonial-section {
+    background-color: #eaf6f6;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.testimonials {
+    max-width: 800px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+.testimonial {
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 350px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.08);
+}
+
+.testimonial span {
+    display: block;
+    margin-top: 10px;
+    font-style: italic;
+    color: #555;
+}
+
+.gallery-section {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #f8f8f8;
+}
+
+.gallery-section h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.gallery-section {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #f8f8f8;
+}
+
+.gallery-section h2 {
+    font-size: 28px;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.gallery-flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    max-width: 70%;
+    margin: auto;
+}
+
+.gallery-card {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+    width: 280px;
+    transition: transform 0.3s ease;
+}
+
+.gallery-card:hover {
+    transform: translateY(-5px);
+}
+
+.gallery-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.caption {
+    padding: 15px;
+    font-size: 15px;
+    color: #555;
+    text-align: left;
+}
+.cta-banner {
+    background-color: #d2f0da;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.cta-btn {
+    text-decoration: none;
+    background-color: #00a86b;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 6px;
+    font-size: 16px;
+    margin-top: 15px;
+    display: inline-block;
+}
+
+.cta-btn:hover {
+    background-color: #007e55;
+}

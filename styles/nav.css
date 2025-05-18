@@ -1,0 +1,113 @@
+.navigation-wrapper{
+    background-color: #11122b;
+    height: 300px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 5px 20px 40px 20px; 
+    color: #cbcbcb;
+}
+
+/* This is a left wrapper style */
+.navigation-wrapper>.left-wrapper{
+    display: flex;
+}
+.navigation-wrapper>.left-wrapper>.phone-wrapper {
+    margin-right: 25px;
+}
+.navigation-wrapper>.left-wrapper>.phonenumber-wrapper {
+    font-family: sans-serif;
+    font-size: 14px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 4px;
+}
+.navigation-wrapper>.left-wrapper>.phonenumber-wrapper>.nt {
+    font-family: sans-serif;
+    font-size: 15px;
+}
+.navigation-wrapper>.left-wrapper>.phonenumber-wrapper>.hour{
+    font-family: sans-serif;
+    font-size: 0.8em;
+    text-align: center;
+}
+
+/* This is a center wrapper style */
+.nav-link a:hover {
+    color: orangered;
+}
+.navigation-wrapper>.center-wrapper {
+    width: auto;
+    /* or max-width: 600px; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.navigation-wrapper>.center-wrapper>.banner-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+.link-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    height: 150px;
+    width: 1000px;
+    font-size: 16px;
+    /* Make text bigger */
+    font-weight: 900;
+    /* Bold text */
+    text-transform: uppercase;
+    /* Change text to uppercase */
+}
+
+.link-wrapper>.nav-link {
+    width: 70px;
+    text-align: center;
+}
+
+.link-wrapper>.nav-link a {
+    text-decoration: none;
+    color: white;
+    transition: 0.5s;
+    font-family: sans-serif;
+}
+
+.nav-link a:hover {
+    color: orangered;
+    letter-spacing: 2px;
+}
+
+/* This is a right wrapper style */
+.navigation-wrapper>.right-wrapper{
+    display: flex;
+}
+.navigation-wrapper>.right-wrapper>.locate-wrapper{
+    margin-right: 25px;
+}
+.navigation-wrapper>.right-wrapper>.address-wrapper{
+    font-family: sans-serif;
+    font-size: 13px;
+    display: grid;
+    grid-gap: 4px;
+    width: 150px;
+}
+.navigation-wrapper>.right-wrapper>.address-wrapper a{
+    text-decoration: none;
+    color: #cbcbcb;
+    transform: 0.3s;
+}
+.navigation-wrapper>.right-wrapper>.address-wrapper a:hover{
+    color: orangered;
+    letter-spacing: 0.2px;
+}
+.white-space{
+    width: auto;
+    height: 100px;
+    background-color: wheat;
+}
+
+
+

@@ -1,0 +1,110 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0px;
+    font-family: sans-serif;
+}
+/* Base: desktop/laptop default styling already exists */
+
+/* Tablet (768px and up) */
+@media screen and (max-width: 1024px) {
+    .navigation-wrapper {
+        flex-direction: column;
+        height: auto;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .link-wrapper {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .left-wrapper,
+    .center-wrapper,
+    .right-wrapper {
+        width: 100%;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+
+    .detail-wrapper {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .d-wrapper {
+        flex: 1 1 45%;
+        max-width: 45%;
+    }
+
+    .hero-text-wrapper h1 {
+        font-size: 28px;
+    }
+
+    .hero-text-wrapper p {
+        font-size: 16px;
+    }
+}
+
+/* Phones (less than 768px) */
+@media screen and (max-width: 767px) {
+    .navigation-wrapper {
+        flex-direction: column;
+        height: auto;
+        padding: 15px;
+        text-align: center;
+    }
+
+    .left-wrapper,
+    .center-wrapper,
+    .right-wrapper {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .link-wrapper {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .detail-wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .d-wrapper {
+        width: 90%;
+        max-width: 100%;
+    }
+
+    .hero-text-wrapper h1 {
+        font-size: 24px;
+    }
+
+    .hero-text-wrapper p {
+        font-size: 14px;
+    }
+
+    .hero-btn {
+        font-size: 14px;
+        padding: 10px 20px;
+    }
+
+    .footer-wrapper {
+        text-align: center;
+    }
+
+    .gallery-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .testimonials {
+        flex-direction: column;
+        align-items: center;
+    }
+}
