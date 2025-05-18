@@ -161,3 +161,47 @@
 .cta-btn:hover {
     background-color: #007e55;
 }
+@media (max-width: 768px) {
+    .hero-section {
+        height: auto;
+        padding: 30px 15px;
+        text-align: center;
+    }
+
+    .hero-text-wrapper h1 {
+        font-size: 24px;
+    }
+
+    .hero-text-wrapper p {
+        font-size: 16px;
+    }
+
+    .testimonials {
+        flex-direction: column;
+    }
+
+    .testimonial {
+        width: 90%;
+        margin: auto;
+    }
+
+    .gallery-flex {
+        flex-direction: column;
+        max-width: 100%;
+        padding: 0 10px;
+    }
+
+    .gallery-card {
+        width: 100%;
+    }
+
+    .cta-banner {
+        padding: 30px 10px;
+    }
+
+    .cta-btn {
+        width: 100%;
+        font-size: 14px;
+        padding: 12px;
+    }
+}
