@@ -9,9 +9,6 @@
 }
 
 /* This is a left wrapper style */
-.navigation-wrapper>.left-wrapper{
-    display: flex;
-}
 .navigation-wrapper>.left-wrapper>.phone-wrapper {
     margin-right: 25px;
 }
@@ -48,10 +45,12 @@
     display: flex;
     justify-content: center;
     align-items: flex-start;
+    width: 10px;
+    height: 100px;
 }
 .link-wrapper {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: flex-end;
     height: 50px;
     width: 1000px;
@@ -81,9 +80,6 @@
 }
 
 /* This is a right wrapper style */
-.navigation-wrapper>.right-wrapper{
-    display: flex;
-}
 .navigation-wrapper>.right-wrapper>.address-wrapper{
     font-family: sans-serif;
     font-size: 13px;
@@ -131,9 +127,10 @@
 
     .navigation-wrapper>.left-wrapper,
     .navigation-wrapper>.right-wrapper {
-        flex-direction: column;
+        display: flex;
+        flex-direction: row;
         align-items: center;
-        margin-bottom: 10px;
+        height: 150px;
     }
 
     .navigation-wrapper>.center-wrapper {
