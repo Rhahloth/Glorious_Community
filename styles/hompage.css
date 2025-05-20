@@ -1,6 +1,6 @@
+/* BELOW NAVIGATION */
 .hero-section {
     background-image: url('../backgrounds/heart-hero.jpg');
-    /* Update with your image */
     background-size: cover;
     background-position: center;
     height: 500px;
@@ -12,7 +12,6 @@
 
 .hero-overlay {
     background-color: #334E58;
-    /* subtle dark overlay for readability */
     width: 100%;
     height: 100%;
     display: flex;
@@ -53,6 +52,32 @@
 .hero-btn:hover {
     background-color: darkorange;
 }
+
+/* SERVICES OVERVIEW SECTION */
+.detail-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.d-wrapper {
+    flex: 1 1 250px;
+    max-width: 300px;
+    padding: 20px;
+    text-align: center;
+    background-color: #fff9e6;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.d-wrapper:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+/* TESTIMONIAL SECTION */
 .testimonial-section {
     background-color: #eaf6f6;
     padding: 50px 20px;
@@ -83,6 +108,7 @@
     color: #555;
 }
 
+/* GALLERY SECTION */
 .gallery-section {
     padding: 40px 20px;
     text-align: center;
@@ -161,6 +187,8 @@
 .cta-btn:hover {
     background-color: #007e55;
 }
+
+/* MEDIA SETTINGS */
 @media (max-width: 768px) {
     .hero-section {
         height: auto;

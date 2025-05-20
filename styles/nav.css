@@ -10,7 +10,8 @@
 
 /* This is a left wrapper style */
 .navigation-wrapper>.left-wrapper>.phone-wrapper {
-    margin-right: 25px;
+    font-size: 20px;
+    text-align: center;
 }
 .navigation-wrapper>.left-wrapper>.phonenumber-wrapper {
     font-family: sans-serif;
@@ -80,6 +81,10 @@
 }
 
 /* This is a right wrapper style */
+.navigation-wrapper>.right-wrapper>.locate-wrapper {
+    font-size: 20px;
+    text-align: center;
+}
 .navigation-wrapper>.right-wrapper>.address-wrapper{
     font-family: sans-serif;
     font-size: 13px;
