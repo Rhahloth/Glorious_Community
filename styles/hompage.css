@@ -131,6 +131,7 @@
     gap: 30px;
     max-width: 70%;
     margin: auto;
+    align-items: center;
 }
 
 .gallery-card {

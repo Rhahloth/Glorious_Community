@@ -4,9 +4,9 @@
     background-color: #11122b;
     height: auto;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
-    padding: 20px;
+    padding: 10px 20px;
     color: #cbcbcb;
     overflow: visible;
 }
