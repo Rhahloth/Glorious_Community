@@ -26,6 +26,7 @@ body {
     width: 60%;
     justify-content: space-between;
     font-size: 20px;
+    text-align: center;
 }
 
 .footer-wrapper .phonenumber-wrapper .hour {
@@ -36,7 +37,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    width: 40%;
+    width: 30%;
     font-size: 18px;
 }
 
