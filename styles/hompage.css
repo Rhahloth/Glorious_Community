@@ -75,7 +75,7 @@
 }
 
 .d-wrapper:hover {
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px orange;
 }
 /* TESTIMONIAL SECTION */
 .testimonial-section {
@@ -167,26 +167,7 @@
     color: #555;
     text-align: left;
 }
-.cta-banner {
-    background-color: #d2f0da;
-    padding: 40px 20px;
-    text-align: center;
-}
 
-.cta-btn {
-    text-decoration: none;
-    background-color: #00a86b;
-    color: white;
-    padding: 12px 25px;
-    border-radius: 6px;
-    font-size: 16px;
-    margin-top: 15px;
-    display: inline-block;
-}
-
-.cta-btn:hover {
-    background-color: #007e55;
-}
 
 /* MEDIA SETTINGS */
 @media (max-width: 768px) {

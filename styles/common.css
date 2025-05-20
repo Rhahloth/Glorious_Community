@@ -68,3 +68,22 @@ body {
     font-family: 'Segoe UI', sans-serif;
     opacity: 0.8;
 }
+.cta-banner {
+    background-color: #d2f0da;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.cta-btn {
+    text-decoration: none;
+    background-color: orange;
+    color: white;
+    padding: 5px 25px;
+    border-radius: 6px;
+    font-size: 16px;
+    display: inline-block;
+}
+
+.cta-btn:hover {
+    background-color: #007e55;
+}
