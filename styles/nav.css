@@ -1,45 +1,24 @@
-.navigation-wrapper{
+/* ========== NAV.CSS (Navigation Specific Layouts Only) ========== */
+
+.navigation-wrapper {
     background-color: #11122b;
     height: auto;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    padding: 20px; 
+    padding: 20px;
     color: #cbcbcb;
     overflow: visible;
 }
 
-/* This is a left wrapper style */
-.footer-wrapper>.left-wrapper>.phone-wrapper {
-    font-size: 20px;
-    text-align: center;
-}
-.footer-wrapper>.left-wrapper>.phonenumber-wrapper {
-    font-family: sans-serif;
-    font-size: 13px;
-    display: grid;
-    grid-gap: 4px;
-    width: 200px;
-    text-align: center;
-}
-.footer-wrapper>.left-wrapper>.phonenumber-wrapper>.hour{
-    font-family: sans-serif;
-    font-size: 0.8em;
-    text-align: center;
-}
-
-/* This is a center wrapper style */
-.nav-link a:hover {
-    color: orangered;
-}
 .navigation-wrapper>.center-wrapper {
     width: auto;
-    /* or max-width: 600px; */
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
+
 .navigation-wrapper>.center-wrapper>.banner-wrapper {
     display: flex;
     justify-content: center;
@@ -47,6 +26,7 @@
     width: 10px;
     height: 100px;
 }
+
 .link-wrapper {
     display: flex;
     justify-content: space-evenly;
@@ -55,7 +35,6 @@
     font-size: 16px;
     font-weight: 900;
     text-transform: uppercase;
-    /* height removed */
 }
 
 .link-wrapper>.nav-link {
@@ -73,79 +52,4 @@
 .nav-link a:hover {
     color: orangered;
     letter-spacing: 2px;
-}
-
-/* This is a right wrapper style */
-.footer-wrapper>.phonenumber-wrapper>.right-wrapper>.locate-wrapper {
-    font-size: 20px;
-    text-align: center;
-}
-.footer-wrapper>.phonenumber-wrapper>.right-wrapper>.address-wrapper{
-    font-family: sans-serif;
-    font-size: 13px;
-    display: grid;
-    grid-gap: 4px;
-    width: 150px;
-    text-align: center;
-}
-.footer-wrapper>.phonenumber-wrapper>.right-wrapper>.address-wrapper a {
-    text-decoration: none;
-    color: #cbcbcb;
-    transition: color 0.3s ease, letter-spacing 0.3s ease;
-    text-align: center;
-}
-
-.footer-wrapper>.phonenumber-wrapper>.right-wrapper>.address-wrapper a:hover {
-    color: orange;
-    letter-spacing: 0.2px;
-}
-.white-space{
-    width: auto;
-    height: 100px;
-    background-color: wheat;
-}
-/* Hide hamburger by default */
-.hamburger {
-    display: none;
-    font-size: 28px;
-    color: white;
-    cursor: pointer;
-    margin-top: 10px;
-}
-
-/* Hamburger + collapsible menu for mobile */
-@media (max-width: 768px) {
-    .hamburger {
-        display: block;
-        align-self: center;
-        padding: 10px;
-    }
-
-       
-    .link-wrapper {
-        display: none;
-        flex-direction: column;
-        align-items: center;
-        background-color: #11122b;
-        width: 100%;
-        padding: 10px 0;
-        position: static;
-        /* <-- important! */
-    }
-    .link-wrapper.show {
-        display: flex !important;
-    }
-
-
-    .link-wrapper>.nav-link {
-        padding: 10px 0;
-        width: 100%;
-        text-align: center;
-        border-top: 1px solid #333;
-    }
-
-    .link-wrapper>.nav-link a {
-        display: block;
-        width: 100%;
-    }
 }

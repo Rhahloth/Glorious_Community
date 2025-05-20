@@ -1,23 +1,6 @@
-:root {
-  --primary-color: #35607b;
-  --accent-color: #cea135;
-  --light-bg: #f9f9f9;
-  --section-bg: #eef3f7;
-  --text-color: #333;
-  --nav-link-color: #fff;
-  --footer-bg: #11122b;
-}
+/* ========== ABOUT.CSS (About Page Specific Styles) ========== */
 
-/* === GLOBAL RESET === */
-body {
-  margin: 0;
-  padding: 0;
-  font-family: 'Segoe UI', sans-serif;
-  background-color: var(--light-bg);
-  color: var(--text-color);
-}
-
-/* === HEADER === */
+/* Header Section */
 .skewed-header {
   position: relative;
   height: 400px;
@@ -89,7 +72,7 @@ body {
   margin: 20px 0;
 }
 
-/* === MIDDLE SECTION === */
+/* Middle Section */
 .middle-section {
   background-color: var(--section-bg);
   display: flex;
@@ -100,11 +83,10 @@ body {
 .middle-section-detail {
   max-width: 1200px;
   width: 100%;
-  padding: 0 15px;
+  padding: 40px 15px;
   background: white;
   border-radius: 8px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
-  padding: 40px;
 }
 
 #CEO {
@@ -112,7 +94,7 @@ body {
   max-width: 400px;
   height: auto;
   border-radius: 10%;
-  border: 2px solid #cea135;
+  border: 2px solid var(--accent-color);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
@@ -133,7 +115,7 @@ body {
   padding-left: 20px;
 }
 
-/* === LAST SECTION === */
+/* Last Section */
 .last-section {
   display: flex;
   justify-content: center;
@@ -179,80 +161,4 @@ body {
   font-size: 16px;
   color: #444;
   line-height: 1.6;
-}
-
-
-/* === RESPONSIVE BREAKPOINTS === */
-@media (max-width: 1024px) {
-  .square {
-    grid-template-columns: 1fr;
-  }
-
-  #chef {
-    float: none;
-    margin: 0 auto 20px auto;
-    display: block;
-  }
-}
-
-@media (max-width: 768px) {
-  .skewed-header-content {
-    flex-direction: column;
-    text-align: center;
-    gap: 20px;
-  }
-
-  .nav-link {
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-  }
-
-  .footer-wrapper .phonenumber-wrapper {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .footer-wrapper .nav-link {
-    flex-direction: column;
-    gap: 10px;
-  }
-
-  .middle-section {
-    padding: 20px 15px;
-  }
-}
-
-@media (max-width: 480px) {
-  .about-us {
-    width: auto;
-    padding: 5px;
-    font-size: 8px;
-  }
-
-  .footer-wrapper .phonenumber-wrapper {
-    font-size: 16px;
-    align-items: center;
-  }
-
-  .footer-wrapper .nav-link a {
-    font-size: 16px;
-  }
-
-  .icons i {
-    font-size: 22px;
-  }
-
-  .trademark {
-    font-size: 14px;
-  }
-
-  .square .par h1 {
-    font-size: 20px;
-    text-align: center;
-  }
-
-  .square .par p {
-    text-align: center;
-  }
 }

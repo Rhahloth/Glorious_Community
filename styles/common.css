@@ -1,11 +1,33 @@
+/* ========== COMMON.CSS (Centralized Styles & Media Queries) ========== */
+
+:root {
+    --primary-color: #35607b;
+    --accent-color: #cea135;
+    --light-bg: #f9f9f9;
+    --section-bg: #eef3f7;
+    --text-color: #333;
+    --nav-link-color: #fff;
+    --footer-bg: #11122b;
+}
+
 * {
     box-sizing: border-box;
 }
+
 body {
-    margin: 0px;
-    font-family: sans-serif;
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: var(--light-bg);
+    color: var(--text-color);
 }
-/* === FOOTER === */
+
+.white-space {
+    width: auto;
+    height: 100px;
+    background-color: wheat;
+}
+
+/* Footer */
 .footer-wrapper {
     background-color: var(--footer-bg);
     color: white;
@@ -46,6 +68,32 @@ body {
     text-decoration: none;
 }
 
+.footer-wrapper .right-wrapper .locate-wrapper {
+    font-size: 20px;
+    text-align: center;
+}
+
+.footer-wrapper .right-wrapper .address-wrapper {
+    font-family: sans-serif;
+    font-size: 13px;
+    display: grid;
+    grid-gap: 4px;
+    width: 150px;
+    text-align: center;
+}
+
+.footer-wrapper .right-wrapper .address-wrapper a {
+    text-decoration: none;
+    color: #cbcbcb;
+    transition: color 0.3s ease, letter-spacing 0.3s ease;
+    text-align: center;
+}
+
+.footer-wrapper .right-wrapper .address-wrapper a:hover {
+    color: orange;
+    letter-spacing: 0.2px;
+}
+
 .icons {
     display: flex;
     gap: 25px;
@@ -69,6 +117,7 @@ body {
     font-family: 'Segoe UI', sans-serif;
     opacity: 0.8;
 }
+
 .cta-banner {
     background-color: #d2f0da;
     padding: 40px 20px;
@@ -88,4 +137,159 @@ body {
 
 .cta-btn:hover {
     background-color: #007e55;
+}
+
+/* Navigation (shared mobile styles) */
+.hamburger {
+    display: none;
+    font-size: 28px;
+    color: white;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+@media (max-width: 1024px) {
+    .square {
+        grid-template-columns: 1fr;
+    }
+
+    #chef {
+        float: none;
+        margin: 0 auto 20px auto;
+        display: block;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-section {
+        height: auto;
+        padding: 30px 15px;
+        text-align: center;
+    }
+
+    .hero-text-wrapper h1 {
+        font-size: 24px;
+    }
+
+    .hero-text-wrapper p {
+        font-size: 16px;
+    }
+
+    .testimonials {
+        flex-direction: column;
+    }
+
+    .testimonial {
+        width: 90%;
+        margin: auto;
+    }
+
+    .gallery-flex {
+        flex-direction: column;
+        max-width: 100%;
+        padding: 0 10px;
+    }
+
+    .gallery-card {
+        width: 100%;
+    }
+
+    .cta-banner {
+        padding: 30px 10px;
+    }
+
+    .cta-btn {
+        width: 100%;
+        font-size: 14px;
+        padding: 12px;
+    }
+
+    .hamburger {
+        display: block;
+        align-self: center;
+        padding: 10px;
+    }
+
+    .link-wrapper {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        background-color: #11122b;
+        width: 100%;
+        padding: 10px 0;
+        position: static;
+    }
+
+    .link-wrapper.show {
+        display: flex !important;
+    }
+
+    .link-wrapper>.nav-link {
+        padding: 10px 0;
+        width: 100%;
+        text-align: center;
+        border-top: 1px solid #333;
+    }
+
+    .link-wrapper>.nav-link a {
+        display: block;
+        width: 100%;
+    }
+
+    .skewed-header-content {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .nav-link {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .footer-wrapper .phonenumber-wrapper,
+    .footer-wrapper .nav-link {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+
+    .middle-section {
+        padding: 20px 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .about-us {
+        width: auto;
+        padding: 5px;
+        font-size: 8px;
+    }
+
+    .footer-wrapper .phonenumber-wrapper {
+        font-size: 16px;
+        align-items: center;
+    }
+
+    .footer-wrapper .nav-link a {
+        font-size: 16px;
+    }
+
+    .icons i {
+        font-size: 22px;
+    }
+
+    .trademark {
+        font-size: 14px;
+    }
+
+    .square .par h1,
+    .square .par p {
+        text-align: center;
+    }
+
+    .square .par h1 {
+        font-size: 20px;
+    }
 }

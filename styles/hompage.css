@@ -1,4 +1,6 @@
-/* BELOW NAVIGATION */
+/* ========== HOMEPAGE.CSS (Hero, Services, Testimonials, Gallery) ========== */
+
+/* Hero Section */
 .hero-section {
     background-image: url('../backgrounds/heart-hero.jpg');
     background-size: cover;
@@ -53,7 +55,7 @@
     background-color: darkorange;
 }
 
-/* SERVICES OVERVIEW SECTION */
+/* Services Overview Section */
 .detail-wrapper {
     display: flex;
     flex-wrap: wrap;
@@ -77,7 +79,8 @@
 .d-wrapper:hover {
     box-shadow: 0 0 10px orange;
 }
-/* TESTIMONIAL SECTION */
+
+/* Testimonial Section */
 .testimonial-section {
     background-color: #eaf6f6;
     padding: 50px 20px;
@@ -108,19 +111,7 @@
     color: #555;
 }
 
-/* GALLERY SECTION */
-.gallery-section {
-    padding: 40px 20px;
-    text-align: center;
-    background-color: #f8f8f8;
-}
-
-.gallery-section h2 {
-    font-size: 28px;
-    margin-bottom: 20px;
-    color: #333;
-}
-
+/* Gallery Section */
 .gallery-section {
     padding: 40px 20px;
     text-align: center;
@@ -166,51 +157,4 @@
     font-size: 15px;
     color: #555;
     text-align: left;
-}
-
-
-/* MEDIA SETTINGS */
-@media (max-width: 768px) {
-    .hero-section {
-        height: auto;
-        padding: 30px 15px;
-        text-align: center;
-    }
-
-    .hero-text-wrapper h1 {
-        font-size: 24px;
-    }
-
-    .hero-text-wrapper p {
-        font-size: 16px;
-    }
-
-    .testimonials {
-        flex-direction: column;
-    }
-
-    .testimonial {
-        width: 90%;
-        margin: auto;
-    }
-
-    .gallery-flex {
-        flex-direction: column;
-        max-width: 100%;
-        padding: 0 10px;
-    }
-
-    .gallery-card {
-        width: 100%;
-    }
-
-    .cta-banner {
-        padding: 30px 10px;
-    }
-
-    .cta-btn {
-        width: 100%;
-        font-size: 14px;
-        padding: 12px;
-    }
 }
