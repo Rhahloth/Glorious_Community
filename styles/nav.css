@@ -2,7 +2,7 @@
 
 .navigation-wrapper {
     background-color: #11122b;
-    height: auto;
+    min-height: 150px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -52,4 +52,7 @@
 .nav-link a:hover {
     color: orangered;
     letter-spacing: 2px;
+}
+.footer-wrapper>.banner-wrapper{
+    text-align: center;
 }
