@@ -128,7 +128,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 40px;
+    gap: 50px;
     max-width: 70%;
     margin: auto;
     align-items: flex-start;
@@ -141,10 +141,10 @@
 .gallery-card {
     width: 270px;
     position: relative;
-    background: #fff;
+    background: orange;
     border-radius: 12px;
     transition: transform 0.3s ease;
-    padding-bottom: 30px;
+    padding-top: 10px;
     /* makes room for overlapping caption */
 }
 
@@ -160,7 +160,7 @@
 
 .caption {
     position: absolute;
-    top: 85%;
+    top: 80%;
     /* pushes the caption up slightly into the image */
     left: 50%;
     transform: translateX(-50%);
