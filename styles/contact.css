@@ -8,10 +8,11 @@
 .contact-booking-container {
     display: flex;
     flex-wrap: wrap;
-    gap: 50px;
+    /* increased from 50px */
     justify-content: space-between;
     align-items: flex-start;
     max-width: 1200px;
+    width: 1000%;
     margin: auto;
 }
 
@@ -19,7 +20,7 @@
 
 .contact-details {
     flex: 1;
-    min-width: 320px;
+    min-width: 50%;
 }
 
 .contact-details h2 {
@@ -32,10 +33,6 @@
     font-size: 16px;
 }
 
-.contact-details p {
-    line-height: 1.6;
-}
-
 .contact-details a {
     color: var(--accent-color);
     text-decoration: none;
@@ -46,7 +43,7 @@
 }
 
 .contact-details iframe {
-    width: 100%;
+    width: 70%;
     height: 250px;
     border: 0;
     border-radius: 10px;
@@ -56,9 +53,10 @@
 /* ===== Booking Form Column ===== */
 
 .booking-form {
-    flex: 1;
-    min-width: 350px;
-}
+    flex: 1 1 45%;
+    max-width: 500px;
+    width: 100%;
+    box-sizing: border-box; }
 
 .booking-form h2 {
     color: orange;
@@ -69,6 +67,8 @@
 .booking-form form {
     display: flex;
     flex-direction: column;
+    width: 100%; 
+    max-width: 400px;
 }
 
 .booking-form label {
@@ -80,6 +80,7 @@
 .booking-form select,
 .booking-form textarea {
     width: 100%;
+    max-width: 100%;
     padding: 10px;
     margin-top: 6px;
     border-radius: 5px;
@@ -89,7 +90,7 @@
 
 .booking-form button {
     margin-top: 20px;
-    background-color: #28a745;
+    background-color: orange;
     color: white;
     padding: 10px 20px;
     border-radius: 5px;
@@ -124,11 +125,17 @@
     .contact-details,
     .booking-form {
         width: 100%;
+        max-width: 100%;
     }
 
-    .booking-form h2,
-    .contact-details h2 {
+    .booking-form h3,
+    .contact-details h3 {
         text-align: center;
+    }
+    .contact-details iframe {
+        width: 25%;
+        /* full width on small screens */
+          
     }
 }
 

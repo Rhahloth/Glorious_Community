@@ -54,11 +54,6 @@
       <div class="contact-booking-container">
         <div class="contact-details">
           <h2>Contact Us</h2>
-          <p>
-            Reach out to us directly or visit our office for support and
-            inquiries.
-          </p>
-
           <h4><i class="fas fa-phone-alt"></i> Phone</h4>
           <p>
             <a href="tel:+256788645203">+256 788 645 203</a><br /><a
@@ -76,7 +71,6 @@
           </p>
 
           <h4><i class="fas fa-map-marker-alt"></i> Location</h4>
-          <p>Kichope Cell, Lira City, Uganda</p>
 
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d1014.8491190756524!2d32.87873527525457!3d2.257469999490687!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMsKwMTUnMjYuOSJOIDMywrA1Mic0Ny44IkU!5e1!3m2!1sen!2sug!4v1747828300054!5m2!1sen!2sug"
@@ -84,6 +78,7 @@
             loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"
           ></iframe>
+          <p>Kichope Cell, Lira City, Uganda</p>
         </div>
 
         <div class="booking-form">
@@ -91,35 +86,11 @@
           <form method="POST" action="https://formspree.io/f/mdkgjlqk">
             <!-- Full Name -->
             <label for="name"><strong>Full Name:</strong></label>
-            <input
-              type="text"
-              id="name"
-              name="name"
-              required
-              style="
-                width: 100%;
-                padding: 10px;
-                margin: 8px 0;
-                border-radius: 5px;
-                border: 1px solid #ccc;
-              "
-            />
+            <input type="text" id="name" name="name" required />
 
             <!-- Email -->
             <label for="email"><strong>Email Address:</strong></label>
-            <input
-              type="email"
-              id="email"
-              name="email"
-              required
-              style="
-                width: 100%;
-                padding: 10px;
-                margin: 8px 0;
-                border-radius: 5px;
-                border: 1px solid #ccc;
-              "
-            />
+            <input type="email" id="email" name="email" required />
 
             <!-- Phone Number -->
             <label for="phone"><strong>Phone Number:</strong></label>
@@ -129,29 +100,11 @@
               name="phone"
               required
               placeholder="+256 700 123456"
-              style="
-                width: 100%;
-                padding: 10px;
-                margin: 8px 0;
-                border-radius: 5px;
-                border: 1px solid #ccc;
-              "
             />
 
             <!-- Service Selection -->
             <label for="service"><strong>Select Service:</strong></label>
-            <select
-              id="service"
-              name="service"
-              required
-              style="
-                width: 100%;
-                padding: 10px;
-                margin: 8px 0;
-                border-radius: 5px;
-                border: 1px solid #ccc;
-              "
-            >
+            <select id="service" name="service" required>
               <option value="">-- Choose a service --</option>
               <option value="Counseling & Psychotherapy">
                 Counseling & Psychotherapy
@@ -168,68 +121,20 @@
 
             <!-- Preferred Date (Mon–Sat only) -->
             <label for="date"><strong>Preferred Date:</strong></label>
-            <input
-              type="date"
-              id="date"
-              name="date"
-              required
-              style="
-                width: 100%;
-                padding: 10px;
-                margin: 8px 0;
-                border-radius: 5px;
-                border: 1px solid #ccc;
-              "
-            />
+            <input type="date" id="date" name="date" required />
 
             <!-- Preferred Time -->
             <label for="time"><strong>Preferred Time:</strong></label>
-            <input
-              type="time"
-              id="time"
-              name="time"
-              required
-              style="
-                width: 100%;
-                padding: 10px;
-                margin: 8px 0;
-                border-radius: 5px;
-                border: 1px solid #ccc;
-              "
-            />
+            <input type="time" id="time" name="time" required />
 
             <!-- Additional Info -->
             <label for="message"
               ><strong>Additional Information (Optional):</strong></label
             >
-            <textarea
-              id="message"
-              name="message"
-              rows="4"
-              style="
-                width: 100%;
-                padding: 10px;
-                margin: 8px 0;
-                border-radius: 5px;
-                border: 1px solid #ccc;
-              "
-            ></textarea>
+            <textarea id="message" name="message" rows="4"></textarea>
 
             <!-- Submit -->
-            <button
-              type="submit"
-              style="
-                margin-top: 10px;
-                background-color: #28a745;
-                color: white;
-                padding: 10px 20px;
-                border-radius: 5px;
-                border: none;
-                cursor: pointer;
-              "
-            >
-              Book Now
-            </button>
+            <button type="submit">Book Now</button>
           </form>
         </div>
       </div>
