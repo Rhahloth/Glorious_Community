@@ -345,6 +345,12 @@ body {
     cursor: pointer;
     margin-top: 10px;
 }
+@media (max-width: 768px) {
+    body {
+        padding-top: 160px;
+        /* slightly more than min-height of .navigation-wrapper */
+    }
+}
 
 @media (max-width: 1024px) {
     .square {
