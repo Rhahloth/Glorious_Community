@@ -58,7 +58,7 @@
 /* Services Overview Section */
 .detail-wrapper {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: wrap-reverse;
     justify-content: center;
     gap: 20px;
     width: 90%;
@@ -91,9 +91,7 @@
     max-width: 800px;
     margin: auto;
     display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
-    justify-content: center;
+    gap: 30px; 
 }
 
 .testimonial {
@@ -126,7 +124,7 @@
 
 .gallery-flex {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: wrap-reverse;
     justify-content: center;
     gap: 50px;
     max-width: 70%;
