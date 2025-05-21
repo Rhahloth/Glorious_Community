@@ -1,5 +1,4 @@
-/* ========== COMMON.CSS (Centralized Styles & Media Queries) ========== */
-
+/* === CSS ROOT VARIABLES === */
 :root {
     --primary-color: #35607b;
     --accent-color: #cea135;
@@ -10,16 +9,23 @@
     --footer-bg: #11122b;
 }
 
-* {
+/* === GLOBAL RESET AND LAYOUT FIXES === */
+*,
+*::before,
+*::after {
     box-sizing: border-box;
 }
 
+html,
 body {
     margin: 0;
+    padding: 0;
+    width: 100%;
     font-family: 'Segoe UI', sans-serif;
     background-color: var(--light-bg);
     color: var(--text-color);
-}
+    overflow-x: hidden;
+    scroll-behavior: smooth; }
 
 /* ===== FOOTER ===== */
 
