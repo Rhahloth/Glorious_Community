@@ -72,22 +72,48 @@
   margin: 20px 0;
 }
 
-/* Middle Section */
+/* === MIDDLE SECTION === */
 .middle-section {
   background-color: var(--section-bg);
   display: flex;
-  justify-content: space-around;
-  padding: 20px 20px;
+  justify-content: center;
+  padding: 60px 20px;
 }
 
+.middle-section-detail {
+  max-width: 1200px;
+  width: 100%;
+  padding: 0 15px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+  padding: 40px;
+}
 
 #CEO {
   width: 100%;
   max-width: 400px;
   height: auto;
   border-radius: 10%;
-  border: 2px solid var(--accent-color);
+  border: 2px solid #cea135;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.middle-section-detail h2 {
+  color: var(--primary-color);
+  margin-top: 30px;
+}
+
+.middle-section-detail p,
+.middle-section-detail ul {
+  font-size: 17px;
+  letter-spacing: 0.4px;
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+
+.middle-section-detail ul {
+  padding-left: 20px;
 }
 
 

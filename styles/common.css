@@ -1,3 +1,5 @@
+/* ========== COMMON.CSS (Centralized Styles & Media Queries) ========== */
+
 :root {
     --primary-color: #35607b;
     --accent-color: #cea135;
@@ -8,19 +10,15 @@
     --footer-bg: #11122b;
 }
 
-body,html {
+* {
+    box-sizing: border-box;
+}
+
+body {
     margin: 0;
     font-family: 'Segoe UI', sans-serif;
     background-color: var(--light-bg);
     color: var(--text-color);
-    padding: 0;
-    width: 100%;
-    overflow-x: hidden;
-}
-iframe {
-    max-width: 100%;
-    height: auto;
-    display: block;
 }
 
 /* ===== FOOTER ===== */
