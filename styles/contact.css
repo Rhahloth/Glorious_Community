@@ -14,6 +14,9 @@
     max-width: 1200px;
     width: 1000%;
     margin: auto;
+    background-color: wheat;
+    padding: 20px;
+    border-radius: 10px;
 }
 
 /* ===== Contact Details Column ===== */
@@ -21,6 +24,10 @@
 .contact-details {
     flex: 1;
     min-width: 50%;
+    background-color: #f9f9f9;
+    margin: 10px;
+    padding-left: 10px;
+    border-radius: 10px;
 }
 
 .contact-details h2 {
@@ -53,10 +60,14 @@
 /* ===== Booking Form Column ===== */
 
 .booking-form {
-    flex: 1 1 45%;
+    flex: 1;
     max-width: 500px;
     width: 100%;
-    box-sizing: border-box; }
+    box-sizing: border-box; 
+    background-color: #f9f9f9;
+    padding-left: 10px;
+    border-radius: 10px;
+}
 
 .booking-form h2 {
     color: orange;
@@ -69,6 +80,7 @@
     flex-direction: column;
     width: 100%; 
     max-width: 400px;
+    margin: 10px;
 }
 
 .booking-form label {
