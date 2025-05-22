@@ -182,7 +182,7 @@ font-size: 16px;
     font-size: 24px;
     background-color:#133C55;
     color: white;
-    border: 8px red;
+    border: none;
     z-index: 10;
 }
 
