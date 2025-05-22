@@ -118,7 +118,7 @@
 
 /* Gallery */
 .gallery-section {
-    padding: 40px 20px;
+    padding: 20px 10px;
     text-align: center;
     background-color: #f8f8f8;
 }
@@ -129,51 +129,74 @@
     color: #333;
 }
 
-.gallery-flex {
-    display: flex;
-    flex-wrap: wrap-reverse;
-    justify-content: center;
-    gap: 50px;
-    max-width: 70%;
+.gallery-slider {
+    position: relative;
+    max-width: 700px;
     margin: auto;
-    align-items: flex-start;
+    overflow: hidden;
+    border-radius: 12px;
+    background: #133C55;
+}
+
+.gallery-slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: 100%;
 }
 
 .gallery-card {
-    width: 270px;
-    background: orange;
-    border-radius: 12px;
-    transition: transform 0.3s ease;
-    padding-top: 10px;
+    flex: 0 0 100% !important;
+    /* Force one slide at a time */
+    max-width: 100%;
+    padding: 0;
+    text-align: center;
+    position: relative; 
 }
 
-.gallery-card:hover {
-    transform: translateY(-5px);
-}
-
-.image-wrapper {
-    position: relative;
-}
-
-.image-wrapper img {
+.gallery-card img {
     width: 100%;
-    display: block;
+    /* take full width of card */
+    height: 450px;
+    /* adjust this value to make image larger or smaller */
+    object-fit: cover;
+    /* crop to fill the container nicely */
     border-radius: 12px;
+    display: block;
+    margin: auto;     
 }
 
 .caption {
+color: white;
+font-size: 16px;
+}
+
+
+/* Navigation buttons */
+.prev,
+.next {
+    cursor: pointer;
     position: absolute;
-    top: 80%;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 90%;
-    padding: 8px 12px;
-    background: wheat;
-    color: black;
-    font-size: 0.85rem;
-    border-radius: 8px;
-    box-sizing: border-box;
-    z-index: 2;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 12px;
+    font-size: 24px;
+    background-color:#133C55;
+    color: white;
+    border: 8px red;
+    z-index: 10;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.6);
 }
 
 /* CTA Banner */

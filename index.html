@@ -10,12 +10,6 @@
     <link rel="stylesheet" href="styles/details.css" />
     <link rel="stylesheet" href="styles/about.css" />
     <link rel="stylesheet" href="fontawesome-free-6.4.2-web/css/all.min.css" />
-    <script>
-      function toggleMenu() {
-        const menu = document.getElementById("mobileMenu");
-        menu.classList.toggle("show");
-      }
-    </script>
   </head>
   <body>
     <header class="navigation-wrapper">
@@ -91,6 +85,57 @@
         </div>
       </section>
 
+      <section class="gallery-section">
+        <h2>Our Impact in Action</h2>
+        <div class="gallery-slider">
+          <div class="gallery-slides" id="slide-track">
+            <div class="gallery-card">
+              <img src="gallery/26.jpg" alt="Therapy session" />
+              <p class="caption">
+                School outreach to raise mental health awareness.
+              </p>
+            </div>
+            <div class="gallery-card">
+              <img src="gallery/03.jpg" alt="Community outreach" />
+              <p class="caption">
+                Community engagement for mental health support.
+              </p>
+            </div>
+            <div class="gallery-card">
+              <img src="gallery/35.jpg" alt="Mental health workshop" />
+              <p class="caption">
+                Mental health awareness campaign in schools.
+              </p>
+            </div>
+            <div class="gallery-card">
+              <img src="gallery/02.jpg" alt="Therapy session" />
+              <p class="caption">Our team committed to community wellbeing.</p>
+            </div>
+            <div class="gallery-card">
+              <img src="gallery/29.jpg" alt="Community outreach" />
+              <p class="caption">
+                Outreach event promoting resilience and healing.
+              </p>
+            </div>
+            <div class="gallery-card">
+              <img src="gallery/04.jpg" alt="Our dedicated team" />
+              <p class="caption">
+                Team celebration after school outreach success.
+              </p>
+            </div>
+          </div>
+
+          <!-- Buttons -->
+          <button class="prev" onclick="moveSlide(-1)">❮</button>
+          <button class="next" onclick="moveSlide(1)">❯</button>
+        </div>
+      </section>
+
+      <section class="cta-banner">
+        <h2>Ready to Start Your Healing Journey?</h2>
+        <a href="contact.html" class="cta-btn">Book a Session</a>
+      </section>
+
       <section class="testimonial-section">
         <h2>What Our Clients Say</h2>
         <div class="testimonials">
@@ -109,63 +154,6 @@
             <span>— Patrick, Community Leader</span>
           </div>
         </div>
-      </section>
-
-      <section class="gallery-section">
-        <h2>Our Impact in Action</h2>
-        <div class="gallery-flex">
-          <div class="gallery-card">
-            <div class="image-wrapper">
-              <img src="gallery/26.jpg" alt="Therapy session" />
-              <p class="caption">
-                School outreach to raise mental health awareness.
-              </p>
-            </div>
-          </div>
-          <div class="gallery-card">
-            <div class="image-wrapper">
-              <img src="gallery/03.jpg" alt="Community outreach" />
-              <p class="caption">
-                Community engagement for mental health support.
-              </p>
-            </div>
-          </div>
-          <div class="gallery-card">
-            <div class="image-wrapper">
-              <img src="gallery/35.jpg" alt="Mental health workshop" />
-              <p class="caption">
-                Mental health awareness campaign in schools.
-              </p>
-            </div>
-          </div>
-          <div class="gallery-card">
-            <div class="image-wrapper">
-              <img src="gallery/02.jpg" alt="Therapy session" />
-              <p class="caption">Our team committed to community wellbeing.</p>
-            </div>
-          </div>
-          <div class="gallery-card">
-            <div class="image-wrapper">
-              <img src="gallery/29.jpg" alt="Community outreach" />
-              <p class="caption">
-                Outreach event promoting resilience and healing.
-              </p>
-            </div>
-          </div>
-          <div class="gallery-card">
-            <div class="image-wrapper">
-              <img src="gallery/04.jpg" alt="Our dedicated team" />
-              <p class="caption">
-                Team celebration after school outreach success.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="cta-banner">
-        <h2>Ready to Start Your Healing Journey?</h2>
-        <a href="contact.html" class="cta-btn">Book a Session</a>
       </section>
     </main>
 
@@ -248,5 +236,63 @@
         <a href="#top" class="back-to-top">↑ Back to Top</a>
       </div>
     </footer>
+
+    <!-- This is for hidding the menu to hamburger format in phones -->
+    <script>
+      function toggleMenu() {
+        const menu = document.getElementById("mobileMenu");
+        menu.classList.toggle("show");
+      }
+    </script>
+
+    <script>
+      const slideTrack = document.getElementById("slide-track");
+      let slides = slideTrack.children;
+      let currentIndex = 1; // Start at 1 because 0 will be a clone
+
+      // Clone first and last slides
+      const firstSlide = slides[0].cloneNode(true);
+      const lastSlide = slides[slides.length - 1].cloneNode(true);
+
+      slideTrack.appendChild(firstSlide);
+      slideTrack.insertBefore(lastSlide, slides[0]);
+
+      // Update slide list after cloning
+      slides = slideTrack.children;
+      const totalSlides = slides.length;
+
+      // Set initial position to real first slide
+      slideTrack.style.transform = `translateX(-100%)`;
+
+      function moveSlide(direction) {
+        currentIndex += direction;
+        slideTrack.style.transition = "transform 0.5s ease-in-out";
+        slideTrack.style.transform = `translateX(-${currentIndex * 100}%)`;
+
+        // Reset position if we moved past cloned ends
+        slideTrack.addEventListener(
+          "transitionend",
+          () => {
+            if (currentIndex === totalSlides - 1) {
+              // At cloned first (end), reset to real first
+              slideTrack.style.transition = "none";
+              currentIndex = 1;
+              slideTrack.style.transform = `translateX(-${
+                currentIndex * 100
+              }%)`;
+            }
+            if (currentIndex === 0) {
+              // At cloned last (beginning), reset to real last
+              slideTrack.style.transition = "none";
+              currentIndex = totalSlides - 2;
+              slideTrack.style.transform = `translateX(-${
+                currentIndex * 100
+              }%)`;
+            }
+          },
+          { once: true }
+        );
+      }
+    </script>
   </body>
 </html>
