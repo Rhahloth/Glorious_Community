@@ -3,261 +3,204 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <title>GCMHSC | Home</title>
-
+    <title>Home | GCMHSC</title>
     <link rel="stylesheet" href="styles/nav.css" />
     <link rel="stylesheet" href="styles/common.css" />
     <link rel="stylesheet" href="styles/hompage.css" />
     <link rel="stylesheet" href="styles/details.css" />
     <link rel="stylesheet" href="styles/about.css" />
     <link rel="stylesheet" href="fontawesome-free-6.4.2-web/css/all.min.css" />
+    <script>
+      function toggleMenu() {
+        const menu = document.getElementById("mobileMenu");
+        menu.classList.toggle("show");
+      }
+    </script>
   </head>
-  <script>
-    function toggleMenu() {
-      const menu = document.getElementById("mobileMenu");
-      menu.classList.toggle("show");
-    }
-  </script>
-
   <body>
-    <div class="navigation-wrapper">
+    <header class="navigation-wrapper">
       <div class="banner-wrapper">
-        <img
-          src="logos/gcmhsc-logo.png"
-          alt="GCMHSC Logo"
-          width="50px"
-          height="25%"
-        />
+        <img src="logos/gcmhsc-logo.png" alt="GCMHSC Logo" width="50" />
       </div>
       <div class="center-wrapper">
-        <!-- Hamburger Icon (only visible on mobile) -->
         <div class="hamburger" onclick="toggleMenu()">
           <i class="fas fa-bars"></i>
         </div>
-
-        <!-- Navigation Links -->
-        <div class="link-wrapper" id="mobileMenu">
+        <nav class="link-wrapper" id="mobileMenu">
           <div class="nav-link"><a href="index.html">Home</a></div>
           <div class="nav-link"><a href="about.html">About</a></div>
           <div class="nav-link"><a href="service.html">Services</a></div>
           <div class="nav-link"><a href="contact.html">Contact</a></div>
           <div class="nav-link"><a href="blog.html">Resources</a></div>
-        </div>
+        </nav>
       </div>
-    </div>
+    </header>
 
-    <div class="hero-section">
-      <div class="hero-overlay">
-        <div class="hero-text-wrapper">
-          <h1>Glorious Community Mental Health Service Center</h1>
-          <p>
-            Providing compassionate, accessible, and holistic mental health
-            services to empower individuals and communities in Northern Uganda.
-          </p>
-          <a href="contact.html" class="hero-btn">Book a Session</a>
-        </div>
-      </div>
-    </div>
-
-    <div class="yellow-section">
-      <div class="detail-wrapper">
-        <div class="d-wrapper">
-          <i class="fas fa-hand-holding-heart"></i>
-          <h3>Compassionate Therapy</h3>
-          <p>Individual and group sessions tailored to your healing journey.</p>
-        </div>
-        <div class="d-wrapper">
-          <i class="fas fa-users"></i>
-          <h3>Community Outreach</h3>
-          <p>
-            Promoting mental health awareness and resilience across our region.
-          </p>
-        </div>
-        <div class="d-wrapper">
-          <i class="fas fa-headset"></i>
-          <h3>Crisis Intervention</h3>
-          <p>We respond quickly in times of personal or community crisis.</p>
-        </div>
-        <div class="d-wrapper">
-          <i class="fas fa-user-shield"></i>
-          <h3>Confidential & Professional</h3>
-          <p>
-            Judgment-free support from trained, caring mental health providers.
-          </p>
-        </div>
-        <div class="d-wrapper">
-          <i class="fas fa-spa"></i>
-          <h3>Holistic Care</h3>
-          <p>
-            We support the full person — mind, body, and community connection.
-          </p>
-        </div>
-      </div>
-    </div>
-    <div class="testimonial-section">
-      <h2>What Our Clients Say</h2>
-      <div class="testimonials">
-        <div class="testimonial">
-          <p>
-            "I felt heard and supported during every session. Glorious helped me
-            rediscover hope."
-          </p>
-          <span>— Sarah, 34</span>
-        </div>
-        <div class="testimonial">
-          <p>
-            "Their outreach program changed how our village understands mental
-            health."
-          </p>
-          <span>— Patrick, Community Leader</span>
-        </div>
-      </div>
-    </div>
-
-    <div class="gallery-section">
-      <h2>Our Impact in Action</h2>
-      <div class="gallery-flex">
-        <div class="gallery-card">
-          <div class="image-wrapper">
-            <img src="gallery/26.jpg" alt="Therapy session" />
-            <p class="caption">
-              Our team engaging in school outreach to raise mental health
-              awareness.
-            </p>
-          </div>
-        </div>
-
-        <div class="gallery-card">
-          <div class="image-wrapper">
-            <img src="gallery/03.jpg" alt="Community outreach" />
-            <p class="caption">
-              Our team engaging with the community to raise mental health
-              awareness.
-            </p>
-          </div>
-        </div>
-
-        <div class="gallery-card">
-          <div class="image-wrapper">
-            <img src="gallery/35.jpg" alt="Mental health workshop" />
-            <p class="caption">
-              Our team engaging in school outreach to raise mental health
-              awareness.
-            </p>
-          </div>
-        </div>
-
-        <div class="gallery-card">
-          <div class="image-wrapper">
-            <img src="gallery/02.jpg" alt="Therapy session" />
-            <p class="caption">
-              Our passionate team committed to community wellbeing.
-            </p>
-          </div>
-        </div>
-
-        <div class="gallery-card">
-          <div class="image-wrapper">
-            <img src="gallery/29.jpg" alt="Community outreach" />
-            <p class="caption">
-              Our team engaging in school outreach to raise mental health
-              awareness.
-            </p>
-          </div>
-        </div>
-
-        <div class="gallery-card">
-          <div class="image-wrapper">
-            <img src="gallery/04.jpg" alt="Our dedicated team" />
-            <p class="caption">
-              A photoshoot after a successful school outreach in Northern
+    <main>
+      <section class="hero-section">
+        <div class="hero-overlay">
+          <div class="hero-text-wrapper">
+            <h1>Glorious Community Mental Health Service Center</h1>
+            <p>
+              Providing compassionate, accessible, and holistic mental health
+              services to empower individuals and communities in Northern
               Uganda.
             </p>
+            <a href="contact.html" class="hero-btn">Book a Session</a>
           </div>
         </div>
-      </div>
-    </div>
+      </section>
 
-    <div class="cta-banner">
-      <h2>Ready to Start Your Healing Journey?</h2>
-      <a href="contact.html" class="cta-btn">Book a Session</a>
-    </div>
-
-    <div class="white-space"></div>
-
-    <footer class="footer-wrapper">
-      <!-- Column 1: Contact Info -->
-      <div class="phonenumber-wrapper">
-        <div class="right-wrapper">
-          <div class="locate-wrapper">
-            <i class="fas fa-phone-alt"></i>
+      <section class="yellow-section">
+        <div class="detail-wrapper">
+          <div class="d-wrapper">
+            <i class="fas fa-hand-holding-heart"></i>
+            <h3>Compassionate Therapy</h3>
+            <p>
+              Individual and group sessions tailored to your healing journey.
+            </p>
           </div>
-          <div class="address-wrapper">
-            <h3>Contact Us</h3>
-            <div>
-              <a href="tel:+256788645203">+256 788 645 203</a><br />
-              <a href="tel:+256778412136">+256 778 412 136</a><br /><br />
-              <a href="mailto:gcmhsc@gmail.com">gcmhsc@gmail.com</a><br />
-              <a href="mailto:raysokello@gmail.com">raysokello@gmail.com</a>
+          <div class="d-wrapper">
+            <i class="fas fa-users"></i>
+            <h3>Community Outreach</h3>
+            <p>
+              Promoting mental health awareness and resilience across our
+              region.
+            </p>
+          </div>
+          <div class="d-wrapper">
+            <i class="fas fa-headset"></i>
+            <h3>Crisis Intervention</h3>
+            <p>We respond quickly in times of personal or community crisis.</p>
+          </div>
+          <div class="d-wrapper">
+            <i class="fas fa-user-shield"></i>
+            <h3>Confidential & Professional</h3>
+            <p>
+              Judgment-free support from trained, caring mental health
+              providers.
+            </p>
+          </div>
+          <div class="d-wrapper">
+            <i class="fas fa-spa"></i>
+            <h3>Holistic Care</h3>
+            <p>
+              We support the full person — mind, body, and community connection.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="testimonial-section">
+        <h2>What Our Clients Say</h2>
+        <div class="testimonials">
+          <div class="testimonial">
+            <p>
+              "I felt heard and supported during every session. Glorious helped
+              me rediscover hope."
+            </p>
+            <span>— Sarah, 34</span>
+          </div>
+          <div class="testimonial">
+            <p>
+              "Their outreach program changed how our village understands mental
+              health."
+            </p>
+            <span>— Patrick, Community Leader</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="gallery-section">
+        <h2>Our Impact in Action</h2>
+        <div class="gallery-flex">
+          <div class="gallery-card">
+            <div class="image-wrapper">
+              <img src="gallery/26.jpg" alt="Therapy session" />
+              <p class="caption">
+                School outreach to raise mental health awareness.
+              </p>
+            </div>
+          </div>
+          <div class="gallery-card">
+            <div class="image-wrapper">
+              <img src="gallery/03.jpg" alt="Community outreach" />
+              <p class="caption">
+                Community engagement for mental health support.
+              </p>
+            </div>
+          </div>
+          <div class="gallery-card">
+            <div class="image-wrapper">
+              <img src="gallery/35.jpg" alt="Mental health workshop" />
+              <p class="caption">
+                Mental health awareness campaign in schools.
+              </p>
+            </div>
+          </div>
+          <div class="gallery-card">
+            <div class="image-wrapper">
+              <img src="gallery/02.jpg" alt="Therapy session" />
+              <p class="caption">Our team committed to community wellbeing.</p>
+            </div>
+          </div>
+          <div class="gallery-card">
+            <div class="image-wrapper">
+              <img src="gallery/29.jpg" alt="Community outreach" />
+              <p class="caption">
+                Outreach event promoting resilience and healing.
+              </p>
+            </div>
+          </div>
+          <div class="gallery-card">
+            <div class="image-wrapper">
+              <img src="gallery/04.jpg" alt="Our dedicated team" />
+              <p class="caption">
+                Team celebration after school outreach success.
+              </p>
             </div>
           </div>
         </div>
-      </div>
+      </section>
 
-      <!-- Column 2: Logo and Message -->
+      <section class="cta-banner">
+        <h2>Ready to Start Your Healing Journey?</h2>
+        <a href="contact.html" class="cta-btn">Book a Session</a>
+      </section>
+    </main>
+
+    <footer class="footer-wrapper">
       <div class="banner-wrapper">
         <img src="logos/gcmhsc-logo.png" alt="GCMHSC Logo" />
-        <p>
-          You are not alone. We are here for you.<br />
-          Let’s work together towards a healthier, happier future.
-        </p>
-
+        <p>You are not alone. We are here for you.</p>
         <div class="icons">
-          <a href="https://www.instagram.com/yourprofile" target="_blank"
-            ><i class="fab fa-instagram"></i
-          ></a>
-          <a
-            href="https://www.facebook.com/profile.php?id=61575583233702"
-            target="_blank"
-            ><i class="fab fa-facebook"></i
-          ></a>
-          <a href="https://twitter.com/yourhandle" target="_blank"
-            ><i class="fab fa-twitter"></i
-          ></a>
-          <a href="https://www.linkedin.com/in/yourprofile" target="_blank"
-            ><i class="fab fa-linkedin"></i
-          ></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-facebook"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-linkedin"></i></a>
         </div>
-
         <div class="trademark">
-          &copy; 2025 Glorious CMHSC &#124; All rights reserved
+          &copy; 2025 Glorious CMHSC | All rights reserved
         </div>
       </div>
 
-      <!-- Column 3: Address & Hours -->
-      <div class="address-wrapper-container">
-        <div class="right-wrapper">
-          <div class="locate-wrapper">
-            <i class="fas fa-map-marker-alt"></i>
-          </div>
-          <div class="address-wrapper">
-            <h3>Visit Us</h3>
-            <a href="contact.html">
-              Kichope Cell<br />
-              Lira City, Uganda
-            </a>
-          </div>
-        </div>
-        <div class="hour">
-          Open: Mon–Sat | 8:30AM – 5PM<br />
-          Closed: Sun
-        </div>
-      </div>
-
-      <!-- Row 2: Quick Links & Newsletter -->
       <div class="footer-extras">
-        <!-- Quick Links -->
+        <div class="phonenumber-wrapper">
+          <div class="right-wrapper">
+            <div class="locate-wrapper">
+              <i class="fas fa-phone-alt"></i>
+            </div>
+            <div class="address-wrapper">
+              <h3>Contact Us</h3>
+              <div>
+                <a href="tel:+256788645203">+256 788 645 203</a><br />
+                <a href="tel:+256778412136">+256 778 412 136</a><br />
+                <a href="mailto:gcmhsc@gmail.com">gcmhsc@gmail.com</a><br />
+                <a href="mailto:raysokello@gmail.com">raysokello@gmail.com</a>
+              </div>
+            </div>
+          </div>
+        </div>
         <div class="quick-links">
           <h3>Quick Links</h3>
           <ul>
@@ -268,8 +211,6 @@
             <li><a href="blog.html">Resources</a></li>
           </ul>
         </div>
-
-        <!-- Newsletter Signup -->
         <div class="newsletter-signup">
           <h3>Subscribe to Our Newsletter</h3>
           <form action="https://formspree.io/f/mwpozgvb" method="POST">
@@ -282,9 +223,20 @@
             <button type="submit">Subscribe</button>
           </form>
         </div>
+        <div class="address-wrapper-container">
+          <div class="right-wrapper">
+            <div class="locate-wrapper">
+              <i class="fas fa-map-marker-alt"></i>
+            </div>
+            <div class="address-wrapper">
+              <h3>Visit Us</h3>
+              <a href="contact.html">Kichope Cell<br />Lira City, Uganda</a>
+            </div>
+          </div>
+          <div class="hour">Open: Mon–Sat | 8:30AM – 5PM<br />Closed: Sun</div>
+        </div>
       </div>
 
-      <!-- Legal and Back to Top -->
       <div
         class="footer-bottom"
         style="width: 100%; margin-top: 30px; text-align: center"

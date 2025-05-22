@@ -1,11 +1,10 @@
 /* ========== HOMEPAGE.CSS (Hero, Services, Testimonials, Gallery) ========== */
 
-/* Hero Section */
 .hero-section {
     background-image: url('../backgrounds/heart-hero.jpg');
     background-size: cover;
     background-position: center;
-    height: 500px;
+    height: auto;
     position: relative;
     display: flex;
     align-items: center;
@@ -14,11 +13,13 @@
 
 .hero-overlay {
     background-color: #334E58;
-    width: 100%;
-    height: 100%;
+    width: 80%;
+    height: 80%;
     display: flex;
     align-items: center;
     justify-content: center;
+    border-radius: 10px;
+    margin: 5px 0px;
 }
 
 .hero-text-wrapper {
@@ -41,7 +42,8 @@
     font-family: Arial, sans-serif;
 }
 
-.hero-btn {
+.hero-btn,
+.cta-btn {
     text-decoration: none;
     background-color: orange;
     color: white;
@@ -49,9 +51,12 @@
     border-radius: 5px;
     font-size: 16px;
     transition: background-color 0.3s ease;
+    display: inline-block;
+    text-align: center;
 }
 
-.hero-btn:hover {
+.hero-btn:hover,
+.cta-btn:hover {
     background-color: darkorange;
 }
 
@@ -73,14 +78,14 @@
     text-align: center;
     background-color: #fff9e6;
     border-radius: 10px;
-    transition: 0.3s;
+    transition: box-shadow 0.3s ease;
 }
 
 .d-wrapper:hover {
     box-shadow: 0 0 10px orange;
 }
 
-/* Testimonial Section */
+/* Testimonials */
 .testimonial-section {
     background-color: #eaf6f6;
     padding: 50px 20px;
@@ -91,7 +96,9 @@
     max-width: 800px;
     margin: auto;
     display: flex;
-    gap: 30px; 
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
 }
 
 .testimonial {
@@ -109,7 +116,7 @@
     color: #555;
 }
 
-/* Gallery Section */
+/* Gallery */
 .gallery-section {
     padding: 40px 20px;
     text-align: center;
@@ -132,18 +139,16 @@
     align-items: flex-start;
 }
 
-.gallery-card:hover {
-    transform: translateY(-5px);
-}
-
 .gallery-card {
     width: 270px;
-    position: relative;
     background: orange;
     border-radius: 12px;
     transition: transform 0.3s ease;
     padding-top: 10px;
-    /* makes room for overlapping caption */
+}
+
+.gallery-card:hover {
+    transform: translateY(-5px);
 }
 
 .image-wrapper {
@@ -159,11 +164,9 @@
 .caption {
     position: absolute;
     top: 80%;
-    /* pushes the caption up slightly into the image */
     left: 50%;
     transform: translateX(-50%);
     width: 90%;
-    /* shorter than full image */
     padding: 8px 12px;
     background: wheat;
     color: black;
@@ -171,4 +174,37 @@
     border-radius: 8px;
     box-sizing: border-box;
     z-index: 2;
+}
+
+/* CTA Banner */
+.cta-banner {
+    background-color: #d2f0da;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .hero-section {
+        height: auto;
+        padding: 30px 15px;
+        text-align: center;
+    }
+
+    .hero-text-wrapper h1 {
+        font-size: 24px;
+    }
+
+    .hero-text-wrapper p {
+        font-size: 16px;
+    }
+
+    .cta-banner {
+        padding: 30px 10px;
+    }
+
+    .cta-btn {
+        width: 100%;
+        font-size: 14px;
+        padding: 5px;
+    }
 }

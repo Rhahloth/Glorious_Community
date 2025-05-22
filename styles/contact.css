@@ -1,9 +1,8 @@
-/* ===== Contact + Booking Section ===== */
+/* ========== CONTACT.CSS (Contact Page Specific Styles) ========== */
 
 .contact-booking-section {
     padding: 60px 5vw;
     background-color: var(--section-bg);
-    /* cleaner than wheat */
 }
 
 .contact-booking-container {
@@ -21,16 +20,19 @@
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
 }
 
-/* ===== Contact Details Column ===== */
-.contact-details {
+.contact-details,
+.booking-form {
     flex: 1 1 45%;
     min-width: 300px;
     padding: 10px;
 }
 
-.contact-details h2 {
+.contact-details h2,
+.booking-form h2 {
     color: orange;
     margin-bottom: 20px;
+    font-family: Arial, sans-serif;
+    text-align: center;
 }
 
 .contact-details h4 {
@@ -54,20 +56,6 @@
     border: 0;
     border-radius: 10px;
     margin-top: 15px;
-}
-
-/* ===== Booking Form Column ===== */
-.booking-form {
-    flex: 1 1 45%;
-    min-width: 320px;
-    max-width: 500px;
-    padding: 10px;
-}
-
-.booking-form h2 {
-    color: orange;
-    margin-bottom: 20px;
-    font-family: Arial, sans-serif;
 }
 
 .booking-form form {
@@ -107,8 +95,6 @@
     background-color: #b28b2f;
 }
 
-/* ===== Responsive Design ===== */
-
 @media (max-width: 1024px) {
     .contact-booking-section {
         padding: 50px 4vw;
@@ -133,13 +119,7 @@
     }
 
     .contact-details iframe {
-        width: 100%;
         height: 200px;
-    }
-
-    .contact-details h2,
-    .booking-form h2 {
-        text-align: center;
     }
 }
 

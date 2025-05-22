@@ -1,5 +1,23 @@
 /* ========== ABOUT.CSS (About Page Specific Styles) ========== */
 
+/* Shared Wrappers */
+.middle-section,
+.last-section {
+  display: flex;
+  justify-content: center;
+  padding: 60px 20px;
+  background-color: var(--section-bg);
+}
+
+.middle-section-detail {
+  max-width: 1200px;
+  width: 100%;
+  padding: 40px 15px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+}
+
 /* Header Section */
 .skewed-header {
   position: relative;
@@ -72,24 +90,6 @@
   margin: 20px 0;
 }
 
-/* === MIDDLE SECTION === */
-.middle-section {
-  background-color: var(--section-bg);
-  display: flex;
-  justify-content: center;
-  padding: 60px 20px;
-}
-
-.middle-section-detail {
-  max-width: 1200px;
-  width: 100%;
-  padding: 0 15px;
-  background: white;
-  border-radius: 8px;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
-  padding: 40px;
-}
-
 #CEO {
   width: 100%;
   max-width: 400px;
@@ -116,15 +116,7 @@
   padding-left: 20px;
 }
 
-
-/* Last Section */
-.last-section {
-  display: flex;
-  justify-content: center;
-  padding: 60px 20px;
-  background-color: var(--light-bg);
-}
-
+/* Last Section Grid */
 .squares {
   max-width: 1200px;
   width: 100%;

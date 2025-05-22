@@ -3,200 +3,138 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <title>GCMHSC | Home</title>
-
+    <title>Coping with Anxiety | GCMHSC</title>
     <link rel="stylesheet" href="styles/nav.css" />
     <link rel="stylesheet" href="styles/common.css" />
     <link rel="stylesheet" href="styles/hompage.css" />
     <link rel="stylesheet" href="styles/details.css" />
     <link rel="stylesheet" href="styles/about.css" />
     <link rel="stylesheet" href="fontawesome-free-6.4.2-web/css/all.min.css" />
+    <script>
+      function toggleMenu() {
+        const menu = document.getElementById("mobileMenu");
+        menu.classList.toggle("show");
+      }
+    </script>
   </head>
-  <script>
-    function toggleMenu() {
-      const menu = document.getElementById("mobileMenu");
-      menu.classList.toggle("show");
-    }
-  </script>
-
   <body>
-    <div class="navigation-wrapper">
+    <header class="navigation-wrapper">
       <div class="banner-wrapper">
-        <img
-          src="logos/gcmhsc-logo.png"
-          alt="GCMHSC Logo"
-          width="50px"
-          height="25%"
-        />
+        <img src="logos/gcmhsc-logo.png" alt="GCMHSC Logo" width="50" />
       </div>
       <div class="center-wrapper">
-        <!-- Hamburger Icon (only visible on mobile) -->
         <div class="hamburger" onclick="toggleMenu()">
           <i class="fas fa-bars"></i>
         </div>
-
-        <!-- Navigation Links -->
-        <div class="link-wrapper" id="mobileMenu">
+        <nav class="link-wrapper" id="mobileMenu">
           <div class="nav-link"><a href="index.html">Home</a></div>
           <div class="nav-link"><a href="about.html">About</a></div>
           <div class="nav-link"><a href="service.html">Services</a></div>
           <div class="nav-link"><a href="contact.html">Contact</a></div>
           <div class="nav-link"><a href="blog.html">Resources</a></div>
-        </div>
+        </nav>
       </div>
-    </div>
+    </header>
 
-    <!-- Blog Post Content -->
-    <div class="middle-section">
-      <div class="middle-section-detail">
-        <h1 style="color: orange">🌿 Coping with Anxiety in Everyday Life</h1>
-        <p style="font-style: italic; color: #666">
-          Published: April 2025 | Author: GCMHSC Clinical Team
-        </p>
+    <main>
+      <article class="middle-section">
+        <div class="middle-section-detail">
+          <h1 class="section-heading">
+            🌿 Coping with Anxiety in Everyday Life
+          </h1>
+          <p class="post-meta">
+            Published: April 2025 | Author: GCMHSC Clinical Team
+          </p>
 
-        <p>
-          Anxiety is a natural response to stress, but when it becomes
-          overwhelming or persistent, it can interfere with daily life. At
-          GCMHSC, we encounter many individuals who silently struggle with
-          feelings of worry, fear, and unease.
-        </p>
+          <p>
+            Anxiety is a natural response to stress, but when it becomes
+            overwhelming or persistent, it can interfere with daily life. At
+            GCMHSC, we encounter many individuals who silently struggle with
+            feelings of worry, fear, and unease.
+          </p>
 
-        <h2 style="color: #11122b">What Causes Anxiety?</h2>
-        <p>
-          Anxiety can be triggered by various factors, including life
-          transitions, past trauma, financial stress, work pressure, or even
-          underlying health conditions. It's important to recognize that
-          everyone experiences anxiety differently.
-        </p>
+          <h2>What Causes Anxiety?</h2>
+          <p>
+            Anxiety can be triggered by various factors, including life
+            transitions, past trauma, financial stress, work pressure, or even
+            underlying health conditions. It's important to recognize that
+            everyone experiences anxiety differently.
+          </p>
 
-        <h2 style="color: #11122b">5 Simple Techniques to Manage Anxiety</h2>
-        <ol style="padding-left: 20px; line-height: 1.8">
-          <li>
-            <strong>Deep Breathing:</strong> Take slow, deep breaths through
-            your nose. Inhale for 4 seconds, hold for 4, and exhale for 4.
-            Repeat.
-          </li>
-          <li>
-            <strong>Limit Stimulants:</strong> Reduce caffeine and sugar intake,
-            especially during stressful periods.
-          </li>
-          <li>
-            <strong>Practice Mindfulness:</strong> Ground yourself in the
-            present moment through guided meditation or quiet reflection.
-          </li>
-          <li>
-            <strong>Physical Activity:</strong> Exercise releases endorphins
-            that improve mood and lower anxiety levels.
-          </li>
-          <li>
-            <strong>Talk to a Professional:</strong> Therapy can help unpack the
-            root causes and build healthy coping strategies.
-          </li>
-        </ol>
+          <h2>5 Simple Techniques to Manage Anxiety</h2>
+          <ol>
+            <li>
+              <strong>Deep Breathing:</strong> Inhale for 4 seconds, hold for 4,
+              exhale for 4. Repeat slowly.
+            </li>
+            <li>
+              <strong>Limit Stimulants:</strong> Reduce caffeine and sugar
+              intake during high-stress periods.
+            </li>
+            <li>
+              <strong>Practice Mindfulness:</strong> Stay present using
+              meditation or quiet reflection.
+            </li>
+            <li>
+              <strong>Physical Activity:</strong> Exercise boosts endorphins,
+              improving mood and reducing anxiety.
+            </li>
+            <li>
+              <strong>Talk to a Professional:</strong> Therapy can help unpack
+              root causes and build resilience.
+            </li>
+          </ol>
 
-        <h2 style="color: #11122b">When to Seek Help</h2>
-        <p>
-          If anxiety is interfering with your ability to work, socialize, or
-          take care of yourself, it’s time to reach out. You don’t have to go
-          through it alone — we’re here to help.
-        </p>
+          <h2>When to Seek Help</h2>
+          <p>
+            If anxiety is interfering with your ability to work, socialize, or
+            take care of yourself, reach out. You’re not alone — support is
+            available.
+          </p>
 
-        <div style="text-align: right; margin-top: 20px">
-          <a href="contact.html">
-            <button
-              style="
-                padding: 10px 20px;
-                background-color: #00a86b;
-                color: white;
-                border: none;
-                border-radius: 4px;
-                cursor: pointer;
-              "
-            >
-              Book a Counseling Session
-            </button>
-          </a>
+          <div class="btn-container">
+            <a href="contact.html" class="cta-btn">Book a Session</a>
+          </div>
+
+          <div class="back-link">
+            <a href="blog.html">← Back to Blog</a>
+          </div>
         </div>
-
-        <div style="margin-top: 40px">
-          <a href="blog.html" style="color: #00a86b">← Back to Blog</a>
-        </div>
-      </div>
-    </div>
+      </article>
+    </main>
 
     <footer class="footer-wrapper">
-      <!-- Column 1: Contact Info -->
-      <div class="phonenumber-wrapper">
-        <div class="right-wrapper">
-          <div class="locate-wrapper">
-            <i class="fas fa-phone-alt"></i>
-          </div>
-          <div class="address-wrapper">
-            <h3>Contact Us</h3>
-            <div>
-              <a href="tel:+256788645203">+256 788 645 203</a><br />
-              <a href="tel:+256778412136">+256 778 412 136</a><br /><br />
-              <a href="mailto:gcmhsc@gmail.com">gcmhsc@gmail.com</a><br />
-              <a href="mailto:raysokello@gmail.com">raysokello@gmail.com</a>
+      <div class="banner-wrapper">
+        <img src="logos/gcmhsc-logo.png" alt="GCMHSC Logo" />
+        <p>You are not alone. We are here for you.</p>
+        <div class="icons">
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-facebook"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-linkedin"></i></a>
+        </div>
+        <div class="trademark">
+          &copy; 2025 Glorious CMHSC | All rights reserved
+        </div>
+      </div>
+
+      <div class="footer-extras">
+        <div class="phonenumber-wrapper">
+          <div class="right-wrapper">
+            <div class="locate-wrapper">
+              <i class="fas fa-phone-alt"></i>
+            </div>
+            <div class="address-wrapper">
+              <h3>Contact Us</h3>
+              <div>
+                <a href="tel:+256788645203">+256 788 645 203</a><br />
+                <a href="tel:+256778412136">+256 778 412 136</a><br />
+                <a href="mailto:gcmhsc@gmail.com">gcmhsc@gmail.com</a><br />
+                <a href="mailto:raysokello@gmail.com">raysokello@gmail.com</a>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-
-      <!-- Column 2: Logo and Message -->
-      <div class="banner-wrapper">
-        <img src="logos/gcmhsc-logo.png" alt="GCMHSC Logo" />
-        <p>
-          You are not alone. We are here for you.<br />
-          Let’s work together towards a healthier, happier future.
-        </p>
-
-        <div class="icons">
-          <a href="https://www.instagram.com/yourprofile" target="_blank"
-            ><i class="fab fa-instagram"></i
-          ></a>
-          <a
-            href="https://www.facebook.com/profile.php?id=61575583233702"
-            target="_blank"
-            ><i class="fab fa-facebook"></i
-          ></a>
-          <a href="https://twitter.com/yourhandle" target="_blank"
-            ><i class="fab fa-twitter"></i
-          ></a>
-          <a href="https://www.linkedin.com/in/yourprofile" target="_blank"
-            ><i class="fab fa-linkedin"></i
-          ></a>
-        </div>
-
-        <div class="trademark">
-          &copy; 2025 Glorious CMHSC &#124; All rights reserved
-        </div>
-      </div>
-
-      <!-- Column 3: Address & Hours -->
-      <div class="address-wrapper-container">
-        <div class="right-wrapper">
-          <div class="locate-wrapper">
-            <i class="fas fa-map-marker-alt"></i>
-          </div>
-          <div class="address-wrapper">
-            <h3>Visit Us</h3>
-            <a href="contact.html">
-              Kichope Cell<br />
-              Lira City, Uganda
-            </a>
-          </div>
-        </div>
-        <div class="hour">
-          Open: Mon–Sat | 8:30AM – 5PM<br />
-          Closed: Sun
-        </div>
-      </div>
-
-      <!-- Row 2: Quick Links & Newsletter -->
-      <div class="footer-extras">
-        <!-- Quick Links -->
         <div class="quick-links">
           <h3>Quick Links</h3>
           <ul>
@@ -207,8 +145,6 @@
             <li><a href="blog.html">Resources</a></li>
           </ul>
         </div>
-
-        <!-- Newsletter Signup -->
         <div class="newsletter-signup">
           <h3>Subscribe to Our Newsletter</h3>
           <form action="https://formspree.io/f/mwpozgvb" method="POST">
@@ -221,9 +157,20 @@
             <button type="submit">Subscribe</button>
           </form>
         </div>
+        <div class="address-wrapper-container">
+          <div class="right-wrapper">
+            <div class="locate-wrapper">
+              <i class="fas fa-map-marker-alt"></i>
+            </div>
+            <div class="address-wrapper">
+              <h3>Visit Us</h3>
+              <a href="contact.html">Kichope Cell<br />Lira City, Uganda</a>
+            </div>
+          </div>
+          <div class="hour">Open: Mon–Sat | 8:30AM – 5PM<br />Closed: Sun</div>
+        </div>
       </div>
 
-      <!-- Legal and Back to Top -->
       <div
         class="footer-bottom"
         style="width: 100%; margin-top: 30px; text-align: center"
